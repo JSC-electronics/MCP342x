@@ -1,0 +1,31 @@
+{
+  "name": "MCP342x",
+  "version": "1.0.5",
+  "keywords": "arduino, ADC342x, sensors",
+  "description": "Supports Microchip MCP3422/MCP3423/MCP3424/MCP3426/MCP3427/MCP3428 analogue to digital converters. Can autoprobe to find device address on the I2C bus. The library can use the I2C GeneralCallConversion command to instruct multiple devices to sample simultaneously. GNU LGPL v2.1.",
+  "license": "LGPL-2.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JSC-electronics/MCP342x"
+  },
+  "authors": [
+    {
+      "name": "Steve Marple",
+      "email": "stevemarple@googlemail.com",
+      "url": "https://github.com/stevemarple"
+    },
+    {
+      "name": "Vladimír Záhradník",
+      "email": "vladimir.zahradnik@jsce.cz",
+      "url": "https://github.com/vzahradnik",
+      "maintainer": true
+    },
+    {
+      "name": "JSC electronics",
+      "email": "development@jsce.cz",
+      "url": "https://github.com/jsc-electronics"
+    }
+  ],
+  "frameworks": "arduino",
+  "platforms": "*"
+}
