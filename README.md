@@ -1,6 +1,8 @@
 # MCP342x ADC library
-[![GitHub release](https://img.shields.io/github/release/JSC-electronics/MCP342x.svg?maxAge=3600)](https://github.com/JSC-electronics/MCP342x/releases)
+[![Arduino_CI](https://github.com/JSC-electronics/MCP342x/actions/workflows/arduino_ci.yml/badge.svg)](https://github.com/JSC-electronics/MCP342x/actions/workflows/arduino_ci.yml)
 [![License: LGPL-2.1](https://img.shields.io/github/license/JSC-electronics/MCP342x)](https://github.com/JSC-electronics/MCP342x/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/JSC-electronics/MCP342x.svg?maxAge=3600)](https://github.com/JSC-electronics/MCP342x/releases)
+[![JSC electronics](https://img.shields.io/badge/JSC-electronics-green.svg)](https://www.jsce.cz/)
 [![Donate](https://img.shields.io/badge/donate-PayPal-blueviolet.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SESX9ABM7V8KA&source=url)
 
 Arduino library to support Microchip MCP342x analogue to digital
