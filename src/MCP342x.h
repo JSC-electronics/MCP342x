@@ -4,7 +4,7 @@
 #include "Wire.h"
 typedef TwoWire* WireType;
 
-#define MCP342X_VERSION "1.0.4"
+#define MCP342X_VERSION "1.0.5"
 
 class MCP342x {
 public:
@@ -84,10 +84,9 @@ public:
    * one of gain1, gain2, gain4 or gain8.
    * @return Value indicating error (if any).
    */
-  error_t convert(Channel channel, Mode mode, Resolution resolution, Gain gain);  error_t convert(const Config &config) const;
-  
+  error_t convert(Channel channel, Mode mode, Resolution resolution, Gain gain);
+  error_t convert(const Config &config) const;
 
-  
   /** Read the sample value from the MCP342x device.
    * @param result The signed result.
    * @param config The contents of the configuration register.
@@ -188,6 +187,7 @@ private:
 
 class MCP342x::Config {
   friend class MCP342x;
+
 public:
   inline Config(void) : val(0) {
   };
