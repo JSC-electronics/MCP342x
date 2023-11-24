@@ -114,6 +114,21 @@ MCP342x::error_t MCP342x::read(long &result, Config& status) const
   // most appropriate configuration value (ready may have changed).
   const uint8_t len = 4;
   uint8_t buffer[len] = {};
+
+  // To fix a bug to prevent there are some data haven't been read out.
+#if 0
+  // Solution1: to flush eveny data inside of RxBufferN
+  // Remaind: need to repair wire->flush() function
+  //          Add 'rxBuffer.clear();' into it
+  // Try to flush the rxBuffer, in case of error number
+  wire->flush();
+#else
+  // Solution2: Just to read out every useless data before get useful one
+  if(wire->available() > 0 ){
+    wire->read();
+  }
+#endif
+
   wire->requestFrom(address, len);
   if (wire->available() != len)
     return errorReadFailed;
