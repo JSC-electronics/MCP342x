@@ -19,7 +19,7 @@ void setup(void)
   digitalWrite(9, HIGH);
   
   // Reset devices
-  MCP342x::generalCallReset();
+  adc.generalCallReset();
   delay(1); // MC342x needs 300us to settle, wait 1ms
   
   // Check device present

@@ -46,7 +46,7 @@ void setup(void)
   pinMode(led, OUTPUT);
     
   // Reset devices
-  MCP342x::generalCallReset();
+  adc.generalCallReset();
   delay(1); // MC342x needs 300us to settle
   
   // Check device present
@@ -74,7 +74,7 @@ void loop(void)
 
   if (startConversion) {
     Serial.println("General call conversion");
-    MCP342x::generalCallConversion();
+    adc.generalCallConversion();
     startConversion = false;
   }
   
